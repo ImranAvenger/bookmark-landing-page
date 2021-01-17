@@ -391,7 +391,7 @@
 
 @media only screen and (max-width: 650px) {
     .background {
-        width: 100px;
-        height: 250px;
+        width: 150px;
+        height: 200px;
     }
 }
