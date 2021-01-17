@@ -129,6 +129,9 @@
 
     .h_img {
         width: 100%;
+        display: block;
+        margin: 0 auto;
+        transform: translateX(-10px);
     }
 
     .navbar_link {
