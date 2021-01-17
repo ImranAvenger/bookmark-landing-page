@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- === Required Social Preview MetaTags === -->
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Clipboard Landing Page | Frontend Mentor Challenge by ImranAvenger">
+    <meta name="description" content="Clipboard Landing Page design is a front end challenge from Frontend Mentor . This challenge is completed by ImranAvenger using HTML, CSS, JAVASCRIPT">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/ImranAvenger/clipboard-landing-page">
+    <meta property="og:title" content="Clipboard Landing Page | Frontend Mentor Challenge by ImranAvenger">
+    <meta property="og:description" content="Clipboard Landing Page design is a front end challenge from Frontend Mentor . This challenge is completed by ImranAvenger using HTML, CSS, JAVASCRIPT">
+    <meta property="og:image" content="./design/desktop-design.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://github.com/ImranAvenger/clipboard-landing-page">
+    <meta property="twitter:title" content="Clipboard Landing Page | Frontend Mentor Challenge by ImranAvenger">
+    <meta property="twitter:description" content="Clipboard Landing Page design is a front end challenge from Frontend Mentor . This challenge is completed by ImranAvenger using HTML, CSS, JAVASCRIPT">
+    <meta property="twitter:image" content="./design/desktop-design.jpg">
+
+    <!-- Title -->
+    <title>Bookmark Landing | Al Imran</title>
+    
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+
+<body>
+    <!-- =========================== HEADER =========================== -->
+    <header id="header">
+        <div id="wrapper_0">
+            <div class="background_0"></div>
+        </div>
+        <div class="container">
+            <!--=== Navigation Bar ===-->
+            <nav class="nav_bar" id="sticky_nav">
+                <div class="nav_logo">
+                    <a href="#header"><img src="./asset/images/logo-bookmark.svg" alt="Logo" class="h_logo"></a>
+                </div>
+                <div class="navbar_link">
+                    <a href="#features" class="nav_link">features</a>
+                    <a href="#pricing" class="nav_link">pricing</a>
+                    <a href="#contact" class="nav_link">contact</a>
+                    <button class="nav_btn btn">login</button>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="mobile_menu">
+                    <div class="m_menu_button" onclick="openNav()">&#9776;</div>
+                </div>
+            </nav>
+            <!-- === Mobile Menu  Style === -->
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <div class="mbl_close_btn">
+                    </div>
+                    <div class="mbl_button_logo">
+                        <a onclick="closeNav()" href="#header" class="m_logo_container"><img src="./asset/images/logo-bookmark-mbl.svg" alt="logo-bookmark-mbl" class="mbl_b_logo"></a>
+                        <a href="javascript:void(0)" class="close_btn" onclick="closeNav()">
+                            <p><i class="fas fa-times"></i></p>
+                        </a>
+                    </div>
+                    <a onclick="closeNav()" href="#features" class="m_menu_link">features</a>
+                    <a onclick="closeNav()" href="#pricing" class="m_menu_link">pricing</a>
+                    <a onclick="closeNav()" href="#contact" class="m_menu_link m_menu_link_l">contact</a>
+                    <div class="btn_flex">
+                        <button class="m_menu_btn">login</button>
+                    </div>
+                    <div class="mbl_social_link">
+                        <a href="#" class="social_links_mbl"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="social_links_mbl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--=== Header Sub-section ===-->
+            <section class="section_0 clearfix">
+                <!-- Intro -->
+                <div class="col span_1_of_2 intro">
+                    <h1 class="heading_1">
+                        A Simple Bookmark Manager
+                    </h1>
+                    <p class="para_1">
+                        A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
+                    </p>
+                    <div class="button_grp">
+                        <button class="button_1 btn intr_btn">Get it on Chrome</button>
+                        <button class="button_2 btn">Get it on Firefox</button>
+                    </div>
+                </div>
+                <!-- Intro Image -->
+                <div class="col span_1_of_2 intro_img">
+                    <div class="h_image">
+                        <img src="./asset/images/illustration-hero.svg" alt="Hero Image" class="h_img">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- =========================== MAIN =========================== -->
+    <main>
+        <div id="wrapper">
+            <div class="background"></div>
+        </div>
+        <!--=== Section_1 ===-->
+        <section class="section_1 clearfix" id="features">
+            <div class="container">
+                <!-- Heading Box -->
+                <div class="h_box">
+                    <h2>Features</h2>
+                    <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                </div>
+                <div class="sub_of_section_1">
+                    <!-- Tab -->
+                    <div class="tab_header">
+                        <div class="tab">
+                            <div class="tab_item">
+                                <button class="tab_links" onclick="cssTab(event, 'simple_bookmarking')" id="defaultOpen">Simple Bookmarking</button>
+                            </div>
+                            <div class="tab_item">
+                                <button class="tab_links" onclick="cssTab(event, 'speedy_searching')">Speedy Searching</button>
+                            </div>
+                            <div class="tab_item">
+                                <button class="tab_links" onclick="cssTab(event, 'easy_sharing')">Easy Sharing</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab Content Section -->
+                    <div class="tab_content clearfix" id="simple_bookmarking">
+                        <div class="col span_1_of_2 tab_image">
+                            <img src="./asset/images/illustration-features-tab-1.svg" alt="illustration-features-tab-1" class="tab_c_image">
+                        </div>
+                        <div class="col span_1_of_2 tab_h_box">
+                            <h2 class="tab_heading">Bookmark in one click</h2>
+                            <p class="tab_para">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                            <div class="tab_button">
+                                <button class="button_1 btn">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_content clearfix" id="speedy_searching">
+                        <div class="col span_1_of_2 tab_image">
+                            <img src="./asset/images/illustration-features-tab-2.svg" alt="illustration-features-tab-2" class="tab_c_image">
+                        </div>
+                        <div class="col span_1_of_2 tab_h_box">
+                            <h2 class="tab_heading">Intelligent search</h2>
+                            <p class="tab_para">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <div class="tab_button">
+                                <button class="button_1 btn">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_content clearfix" id="easy_sharing">
+                        <div class="col span_1_of_2 tab_image">
+                            <img src="./asset/images/illustration-features-tab-3.svg" alt="illustration-features-tab-3" class="tab_c_image">
+                        </div>
+                        <div class="col span_1_of_2 tab_h_box">
+                            <h2 class="tab_heading">Share your bookmarks</h2>
+                            <p class="tab_para">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                            <div class="tab_button">
+                                <button class="button_1 btn">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== Section_2 ===-->
+        <section class="section_2 clearfix" id="pricing">
+            <div class="container">
+                <!-- Heading Box -->
+                <div class="h_box section_2_h_box">
+                    <h2>Download the extension</h2>
+                    <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+                </div>
+                <!-- Sub-section of Section_2 / Card -->
+                <div class="card_section">
+                    <div class="card_1 card">
+                        <div class="card_logo">
+                            <img src="./asset/images/logo-chrome.svg" alt="Chrome">
+                        </div>
+                        <h3 class="card_heading">Add to Chrome</h3>
+                        <p class="card_para">Minimum version 62</p>
+                        <div class="card_button">
+                            <button class="button_1 btn">Add & Install Extension</button>
+                        </div>
+                    </div>
+                    <div class="card_2 card">
+                        <div class="card_logo">
+                            <img src="./asset/images/logo-firefox.svg" alt="Firefox">
+                        </div>
+                        <h3 class="card_heading">Add to Firefox</h3>
+                        <p class="card_para">Minimum version 55</p>
+                        <div class="card_button">
+                            <button class="button_1 btn">Add & Install Extension</button>
+                        </div>
+                    </div>
+                    <div class="card_3 card">
+                        <div class="card_logo">
+                            <img src="./asset/images/logo-opera.svg" alt="Opera">
+                        </div>
+                        <h3 class="card_heading">Add to Opera</h3>
+                        <p class="card_para">Minimum version 46</p>
+                        <div class="card_button">
+                            <button class="button_1 btn">Add & Install Extension</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== Section_3 ===-->
+        <section class="section_3">
+            <div class="container">
+                <!-- Heading Box -->
+                <div class="h_box">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+                </div>
+                <!-- Sub-section / Accordion -->
+                <div class="accordion_container">
+                    <button class="accordion accordion_1">What is Bookmark?</button>
+                    <div class="panel">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus illum blanditiis saepe fugit neque suscipit autem magnam tempore, omnis architecto voluptas nemo totam aut fuga. Odit optio ducimus repudiandae facere cupiditate dolor unde necessitatibus nemo, odio possimus reiciendis rerum.</p>
+                    </div>
+                    <button class="accordion">How can I request a new browser?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem sapiente id animi quibusdam adipisci repudiandae doloremque commodi dolorum eius, nostrum ipsam molestias in corporis hic quasi debitis ducimus. Facere laudantium quos unde ea sequi dolor minus. Deserunt, quas nostrum.</p>
+                    </div>
+                    <button class="accordion">Is there a mobile app?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptas illum dolorem, dicta incidunt necessitatibus laudantium esse reprehenderit nisi asperiores aliquam, perferendis voluptatibus ex odit ipsa amet consequuntur natus aliquid. Fugit laudantium exercitationem voluptatum repellat autem pariatur libero reprehenderit corporis.</p>
+                    </div>
+                    <button class="accordion">What about other Chromium browsers?</button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus omnis corrupti aliquid. Expedita culpa sit, perspiciatis placeat sint blanditiis magni veritatis, dolorem modi reiciendis laboriosam harum nulla molestiae rem animi voluptate laudantium! Dicta enim, quae officia nihil possimus ullam.</p>
+                    </div>
+                    <div class="section_3_btn">
+                        <button class="button_1 btn">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== Section_4 ===-->
+        <section class="section_4" id="contact">
+            <div class="container">
+                <p class="section_4_para">35,000+ ALREADY JOINED</p>
+                <div class="h_box h_section_4">
+                    <h2>Stay up-to-date with what we're doing</h2>
+                </div>
+                <div class="form_container">
+                    <form>
+                        <p>
+                            <label for="mail">
+                                <input type="text" id="mail" name="mail" placeholder="Enter your email address" required>
+                                <span class="error" aria-live="polite"></span>
+                            </label>
+                        </p>
+                        <!-- Some legacy browsers need to have the `type` attribute
+                        explicitly set to `submit` on the `button`element -->
+                        <button type="submit" class="form_button btn">Contact Us</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =========================== FOOTER =========================== -->
+    <footer>
+        <div class="container">
+            <nav class="footer_nav_bar">
+                <div class="footer_nav_logo">
+                    <img src="./asset/images/logo-bookmark-footer.svg" alt="logo-bookmark">
+                </div>
+                <div class="footer_navbar_link">
+                    <a href="#" class="footer_nav_link">features</a>
+                    <a href="#" class="footer_nav_link">pricing</a>
+                    <a href="#" class="footer_nav_link">contact</a>
+                </div>
+            </nav>
+            <div class="footer_social_link">
+                <div class="social_link_container">
+                    <a href="#" class="social_links"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="social_links"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            <p>
+                Challenged by <a href="https://www.Frontend Mentor/challenges">Frontend Mentor</a> | Coded by <a href="https://github.com/ImranAvenger">Al Imran</a>
+            </p>
+        </div>
+    </footer>
+    <!-- JS File -->
+    <script src="./asset/js/main.js"></script>
+</body>
+
+</html>

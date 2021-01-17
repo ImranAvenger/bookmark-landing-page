@@ -1,0 +1,397 @@
+@media only screen and (max-width: 1300px) {
+
+    .card_1 {
+        align-self: flex-start;
+        transform: translateX(-20px);
+    }
+    
+    .card_2 {
+        align-self: center;
+    }
+    
+    .card_3 {
+        align-self: flex-end;
+        transform: translateX(20px);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .nav_link {
+        padding-left: 30px;
+    }
+
+    .button_grp {
+        display: block;
+    }
+
+    .button_1, .button_2 {
+        margin-top: 10px;
+    }
+
+    .heading_1 {
+        padding-top: 100px;
+    }
+
+    .tab_content .col {
+        float: none;
+    }
+
+    .tab_header {
+        width: 600px;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .tab_item {
+        display: flex;
+        border-top: 1.5px solid hsl(240, 24%, 90%);
+        justify-content: center;
+    }
+    
+    .tab_links {
+        width: 600px;
+    }
+
+    .tab_item button.active_tab {
+        width: 400px;
+    }
+
+    .tab_image {
+        width: 100%;
+    }
+
+    .tab_c_image {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .tab_h_box {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .tab_heading {
+        text-align: center;
+    }
+
+    .tab_para {
+        text-align: center;
+    }
+
+    .tab_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .background {
+        width: 400px;
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .mobile_menu { 
+        display: inline;
+    }
+    
+    .section_0 {
+        display:flex; 
+        flex-direction: column;
+    }
+
+    .intro {
+        order: 2;
+        text-align: center;
+        width: auto;
+    }
+
+    .intro_img {
+        display: block;
+        order: 1;
+        width: 110%;
+        margin: 0 auto;
+        float: unset;
+    }
+
+    .heading_1 {
+        font-size: 40px;
+    }
+
+    .h_img {
+        width: 100%;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .background_0 {
+        top: 200px;
+        width: 60%;
+        height: 340px;
+    }
+
+    .tab_content .col {
+        float: none;
+    }
+
+    .tab_header {
+        width: 400px;
+    }
+
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .tab_item {
+        display: flex;
+        border-top: 1.5px solid hsl(240, 24%, 90%);
+        justify-content: center;
+    }
+    
+    .tab_links {
+        width: 400px;
+    }
+
+    .tab_item button.active_tab {
+        width: 260px;
+    }
+
+    .tab_image {
+        width: 100%;
+    }
+
+    .tab_c_image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        float: unset;
+    }
+
+    .tab_h_box {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .tab_heading {
+        text-align: center;
+    }
+
+    .tab_para {
+        text-align: center;
+    }
+
+    .tab_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card_1 {
+        align-self: center;
+        transform: translateX(0);
+    }
+    
+    .card_2 {
+        margin-top: 40px;
+        align-self: center;
+    }
+    
+    .card_3 {
+        margin-top: 40px;
+        align-self: center;
+        transform: translateX(0);
+    }
+
+    .accordion_container {
+        max-width: 92%;
+    }
+
+    form {
+        display: block;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .error {
+        width: 100%;
+    }
+
+    .form_button {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    footer .container {
+        display: block;
+    }
+
+    .footer_nav_logo img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+    }
+
+    .footer_nav_bar {
+        display: block;
+    }
+
+    .footer_navbar_link {
+        display: block;
+        padding-left: 0;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .footer_nav_link {
+        padding: 20px 0;
+        display: block;
+        text-align: center;
+        
+    }
+
+    .footer_social_link {
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .social_link_container {
+        margin-right: auto;
+    }
+
+    .social_links {
+        padding: 0 10px;
+    }
+
+    .background {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .background_0 {
+        width: 450px;
+        height: 300px;
+        border-bottom-left-radius: 180px;
+        border-top-left-radius: 180px;
+        background: hsl(231, 67%, 59%);
+        position: absolute;
+        top: 250px;
+        right: 0;
+        z-index: -100;
+    }
+
+    .background {
+       top: 650px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .background_0 {
+        width: 300px;
+        height: 300px;
+        border-bottom-left-radius: 180px;
+        border-top-left-radius: 180px;
+        background: hsl(231, 67%, 59%);
+        position: absolute;
+        top: 250px;
+        right: 0;
+        z-index: -100;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .background_0 {
+        width: 400px;
+        height: 300px;
+        border-bottom-left-radius: 180px;
+        border-top-left-radius: 180px;
+        background: hsl(231, 67%, 59%);
+        position: absolute;
+        top: 250px;
+        right: 0;
+        z-index: -100;
+        height: 300px;
+    }
+
+    .background {
+        top: 640px;
+        width: 300px;
+        height: 300px;
+    }
+     
+}
+
+@media only screen and (max-width: 630px) {
+    .background_0 {
+        width: 300px;
+        height: 250px;
+        border-bottom-left-radius: 180px;
+        border-top-left-radius: 180px;
+        background: hsl(231, 67%, 59%);
+        position: absolute;
+        top: 250px;
+        right: 0;
+        z-index: -100;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .background {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .background {
+        width: 400px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .background {
+        width: 400px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .background {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .background {
+        width: 400px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,845 @@
+/* ========================= */
+/*    Basic Setup            */
+/* ========================= */
+
+*,
+html {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+:focus {
+	outline: none;
+}
+
+/* ========================= */
+/* Reusable Component        */
+/* ========================= */
+
+/* Button */
+
+.btn {
+	padding: 10px 20px;
+	font: normal 400 15px/20px 'Rubik', sans-serif;
+	position: relative;
+	border-radius: 5px;
+	-webkit-transition: background 0.6s ease;
+	-o-transition: background 0.6s ease;
+	transition: background 0.6s ease;
+	-webkit-box-shadow: 0 10px 10px rgba(57, 56, 61, 0.205);
+	box-shadow: 0 10px 10px rgba(57, 56, 61, 0.205);
+	background-clip: padding-box;
+	cursor: pointer;
+	color: hsl(0, 0%, 96%);
+}
+
+.button_1 {
+	background: hsl(231, 69%, 60%);
+	border: 2px solid hsl(231, 69%, 60%);
+	padding: 10px 20px;
+}
+
+.button_1:hover {
+	background: hsl(0, 0%, 96%);
+	color: hsl(231, 69%, 60%);
+}
+
+
+/* Heading Box */
+
+.h_box {
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.h_box h2 {
+	font-weight: 500;
+	color: hsl(229, 31%, 21%);
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 32px;
+}
+
+.h_box p {
+	color: hsl(229, 8%, 60%);
+	line-height: 1.7;
+	text-align: center;
+}
+
+/* Section_1 Tab Component */
+
+.tab_h_box {
+	max-width: 450px;
+	padding-top: 60px;
+	padding-left: 80px;
+}
+
+.tab_heading {
+	font-weight: 500;
+	color: hsl(229, 31%, 21%);
+	padding-bottom: 20px;
+	font-size: 32px;
+}
+
+.tab_para {
+	color: hsl(229, 8%, 60%);
+	line-height: 1.7;
+	padding-bottom: 20px;
+}
+
+/* ========================= */
+/*    Header Section         */
+/* ========================= */
+
+header {
+	padding-top: 50px;
+}
+
+.nav_bar {
+	display: inline;
+}
+
+.nav_logo {
+	float: left;
+	margin-top: 6.2px;
+}
+
+.navbar_link {
+	float: right;
+	margin-top: 0;
+}
+
+.nav_link {
+	padding-left: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	color: hsl(229, 31%, 21%);
+	;
+}
+
+.nav_link:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.nav_btn {
+	margin-left: 40px;
+}
+
+.nav_btn {
+	background: hsl(0, 94%, 66%);
+	border: 2px solid hsl(0, 94%, 66%);
+	text-transform: uppercase;
+	padding: 8px 30px;
+}
+
+.nav_btn:hover {
+	background: whitesmoke;
+	color: hsl(0, 94%, 66%);
+}
+
+.heading_1 {
+	padding-top: 200px;
+	font-size: 50px;
+	color: hsl(229, 31%, 21%);
+	font-weight: 500;
+}
+
+.h_img {
+	padding-top: 100px;
+	display: block;
+	width: 120%;
+}
+
+.para_1 {
+	padding-top: 18px;
+	line-height: 1.7;
+	color: hsl(229, 8%, 60%);
+}
+
+.button_grp {
+	padding-top: 18px;
+}
+
+.intr_btn {
+	margin-right: 10px;
+}
+
+.button_2 {
+	background: hsl(0, 0%, 97%);
+	color: hsl(230, 3%, 37%);
+	padding: 12px 22px;
+	border: 0;
+}
+
+.button_2:hover {
+	padding: 10px 20px;
+	border: 2px solid hsl(229, 31%, 21%);
+	background: transparent;
+}
+
+/* Mobile Menu */
+
+.mobile_menu {
+	display: inline;
+	display: none;
+}
+
+.m_menu_button {
+	float: right;
+	padding: 5px 10px;
+	border: 2px solid rgb(190, 182, 182);
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.m_menu_button:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	background-color: hsl(0, 0%, 0%);
+	background-color: hsla(0, 0%, 0%, 0.9);
+	overflow-x: hidden;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.overlay-content {
+	position: relative;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.overlay a {
+	padding: 20px 8px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	text-transform: uppercase;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+	color: hsl(0, 0%, 95%);
+}
+
+.mbl_button_logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.close_btn p {
+	font-size: 20px;
+	margin-right: -100px;
+	margin-top: -65px;
+	margin-left: 25px;
+}
+
+.m_menu_link {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+	border-top: 1px solid hsl(0, 6%, 73%);
+	letter-spacing: 3px;
+}
+
+.m_menu_link_l {
+	border-bottom: 1px solid hsl(0, 6%, 73%);
+}
+
+.m_menu_btn {
+	cursor: pointer;
+	width: 60%;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: transparent;
+	color: hsl(0, 0%, 51%);
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 3px;
+	border: 3px solid hsl(0, 0%, 51%);
+	border-radius: 5px;
+}
+
+.m_menu_btn:hover {
+	color: hsl(0, 0%, 95%);
+}
+
+.m_logo_container {
+	margin-top: -70px;
+	margin-left: -80px;
+}
+
+.mbl_social_link {
+	margin-top: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.mbl_social_link .social_links_mbl {
+	font-size: 30px;
+}
+
+/* ========================= */
+/*    Main Section           */
+/* ========================= */
+
+/* Section_1 */
+
+.section_1 {
+	padding-top: 100px;
+}
+
+.sub_of_section_1 {
+	padding-top: 50px;
+}
+
+.tab_header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-bottom: 1.5px solid hsl(240, 24%, 90%);
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.tab_item {
+	display: inline;
+}
+
+.tab_links {
+	padding: 20px 40px;
+	font: normal 400 18px/20px 'Rubik', sans-serif;
+	position: relative;
+	cursor: pointer;
+	color: hsl(229, 31%, 21%);
+	width: 260px;
+	background: transparent;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 4px solid transparent;
+}
+
+.tab_item button.active_tab {
+	border-bottom-color: hsl(0, 94%, 66%);
+	color: hsl(0, 0%, 0%);
+}
+
+.tab_item button:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.tab_item button.active_tab:hover {
+	color: hsl(0, 0%, 0%);
+}
+
+.tab_content {
+	padding-top: 50px;
+}
+
+/* Section_2 */
+
+.section_2 {
+	padding-top: 200px;
+}
+
+.section_2_h_box {
+	padding-bottom: 50px;
+}
+
+.card_section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 450px;
+}
+
+.card {
+	margin: 0 auto;
+	padding: 0 40px;
+	-webkit-box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+	box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
+	border-radius: 15px;
+	background-image: url(/asset/images/bg-dots.svg);
+	background-repeat: no-repeat;
+	background-position-y: 280px;
+}
+
+.card_1 {
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	-webkit-transform: translateX(40px);
+	-ms-transform: translateX(40px);
+	transform: translateX(40px);
+}
+
+.card_2 {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.card_3 {
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+	-webkit-transform: translateX(-40px);
+	-ms-transform: translateX(-40px);
+	transform: translateX(-40px);
+}
+
+.card_logo img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.card_heading {
+	text-align: center;
+	font-weight: 500;
+	color: hsl(229, 31%, 21%);
+	padding-top: 40px;
+}
+
+.card_para {
+	text-align: center;
+	padding-top: 15px;
+	color: hsl(229, 8%, 60%);
+	font-size: 15px;
+}
+
+.card_button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+/* Section_3 */
+
+.section_3 {
+	padding-top: 150px;
+}
+
+.accordion_container {
+	padding-top: 50px;
+}
+
+.section_3_btn {
+	padding-top: 50px;
+}
+
+/* 
+ Accordion 
+          */
+
+.accordion_container {
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+.accordion {
+	background-color: transparent;
+	color: hsl(229, 31%, 21%);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border-bottom: 1.5px solid hsl(240, 24%, 90%);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	text-align: left;
+	font-size: 18px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	padding-left: 0;
+}
+
+.accordion_1 {
+	border-top: 1.5px solid hsl(240, 24%, 90%);
+}
+
+.accordion_container .active_acc {
+	border-bottom: none;
+}
+
+.accordion:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.accordion:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f078';
+	color: hsl(231, 67%, 59%);
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active_acc:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: '\f077';
+	color: hsl(0, 94%, 66%);
+}
+
+.panel {
+	padding: 0 5px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height 0.3s ease-out;
+	-o-transition: max-height 0.3s ease-out;
+	transition: max-height 0.3s ease-out;
+	line-height: 2;
+	font-size: 17px;
+	color: hsl(229, 8%, 60%);
+}
+
+.section_3_btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-bottom: 150px;
+}
+
+
+/* Section_4 */
+
+.section_4 {
+	background: hsl(231, 69%, 60%);
+}
+
+.section_4_para {
+	text-align: center;
+	color: whitesmoke;
+	padding-top: 80px;
+	font-size: 15px;
+	letter-spacing: 5px;
+}
+
+.h_section_4 {
+	padding-top: 40px;
+	max-width: 410px;
+}
+
+.h_section_4 h2 {
+	color: whitesmoke;
+}
+
+/* === Important Form Validation Message Design === */
+
+form {
+	padding-top: 20px;
+	max-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding-bottom: 80px;
+}
+
+input[type=text],
+select {
+	width: 300px;
+	padding: 11px 20px;
+	margin: 0 10px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 18px;
+	color: hsl(229, 31%, 21%);
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+input::-webkit-input-placeholder {
+	color: hsl(240, 18%, 85%);
+}
+
+input::-moz-placeholder {
+	color: hsl(240, 18%, 85%);
+}
+
+input:-ms-input-placeholder {
+	color: hsl(240, 18%, 85%);
+}
+
+input::-ms-input-placeholder {
+	color: hsl(240, 18%, 85%);
+}
+
+input::placeholder {
+	color: hsl(240, 18%, 85%);
+}
+
+/* This is our style for the invalid fields */
+
+input.invalid {
+	border-color: hsl(0, 94%, 66%);
+	background-color: hsl(0, 100%, 93%);
+}
+
+input.error_icon {
+	background-image: url(/asset/images/icon-error.svg);
+	background-repeat: no-repeat;
+	background-position: 97% 50%;
+	border-bottom: none;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+input:focus.invalid {
+	outline: none;
+}
+
+/* This is the style of our error messages */
+
+.error {
+	margin: 0 auto;
+	width: 300px;
+	margin-top: 0;
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+	color: white;
+	background-color: hsl(0, 94%, 66%);
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.error.active {
+	padding: 6px;
+}
+
+.form_button {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	background: hsl(0, 94%, 66%);
+	border: 2px solid hsl(0, 94%, 66%);
+	padding: 10px 20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form_button:hover {
+	background: hsl(0, 0%, 96%);
+	color: hsl(0, 94%, 66%);
+}
+
+/* ========================= */
+/*    Footer Section         */
+/* ========================= */
+
+footer {
+	background: hsl(229, 31%, 21%);
+	padding: 40px 0;
+}
+
+footer .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.footer_nav_bar {
+	padding-top: 7px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.footer_navbar_link {
+	padding-left: 100px;
+	padding-top: 1px;
+}
+
+.footer_nav_link:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.footer_nav_link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 96%);
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+.social_link_container {
+	display: block;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.social_links {
+	font-size: 30px;
+	color: whitesmoke;
+	padding-left: 10px;
+}
+
+.social_links:first-child:hover {
+	color: hsl(220, 46%, 48%);
+}
+
+.social_links:last-child:hover {
+	color: hsl(203, 89%, 53%);
+}
+
+.footer_social_link {
+	display: block;
+	margin: 0 0 0 auto;
+}
+
+.attribution {
+	padding-top: 30px;
+}
+
+.attribution p {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.attribution a {
+	text-decoration: none;
+	color: hsl(0, 94%, 66%);
+}
+
+.attribution a:hover {
+	color: hsl(0, 94%, 50%);
+}
+
+/* ============ Additional Style ============ */
+
+/* Background Blue Div */
+
+#wrapper_0 {
+	position: relative;
+}
+
+.background_0 {
+	width: 500px;
+	height: 320px;
+	border-bottom-left-radius: 180px;
+	border-top-left-radius: 180px;
+	background: hsl(231, 67%, 59%);
+	position: absolute;
+	top: 290px;
+	right: 0;
+	z-index: -100;
+}
+
+#wrapper {
+	position: relative;
+}
+
+.background {
+	width: 550px;
+	height: 340px;
+	border-bottom-right-radius: 200px;
+	border-top-right-radius: 200px;
+	background: hsl(231, 67%, 59%);
+	color: #999999;
+	position: absolute;
+	top: 510px;
+	left: 0;
+	z-index: -100;
+}
+
+/* Sticky Menu */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	padding: 20px 0;
+	-webkit-box-shadow: 0 10px 10px rgba(57, 56, 61, 0.205);
+	box-shadow: 0 10px 10px rgba(57, 56, 61, 0.205);
+	z-index: 9999;
+}
+
+.sticky .nav_logo {
+	margin-left: 10%;
+}
+
+.sticky .navbar_link {
+	margin-right: 10%;
+}
+
+.sticky .mobile_menu {
+	position: relative;
+	right: 10%;
+}
