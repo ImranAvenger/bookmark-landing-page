@@ -92,7 +92,11 @@
         justify-content: center;
     }
 
-    .wrapper_0, .wrapper {
+    #wrapper_0 {
+        display: none;
+    }
+
+    #wrapper {
         display: none;
     }
 }
