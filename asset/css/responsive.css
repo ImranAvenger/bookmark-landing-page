@@ -146,7 +146,7 @@
     }
 
     .tab_header {
-        width: 400px;
+        width: 300px;
     }
 
     .tab {
@@ -162,11 +162,11 @@
     }
     
     .tab_links {
-        width: 400px;
+        width: 300px;
     }
 
     .tab_item button.active_tab {
-        width: 260px;
+        width: 255px;
     }
 
     .tab_image {
