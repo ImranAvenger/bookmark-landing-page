@@ -411,7 +411,7 @@ header {
 	-webkit-box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
 	box-shadow: 0 10px 30px rgba(57, 56, 61, 0.205);
 	border-radius: 15px;
-	background-image: url(/asset/images/bg-dots.svg);
+	background-image: url(/asset/images/bg-dots-n.svg);
 	background-repeat: no-repeat;
 	background-position-y: 280px;
 }
@@ -564,7 +564,6 @@ header {
 	margin-bottom: 150px;
 }
 
-
 /* Section_4 */
 
 .section_4 {
@@ -644,7 +643,7 @@ input.invalid {
 }
 
 input.error_icon {
-	background-image: url(/asset/images/icon-error.svg);
+	background-image: url(/asset/images/icon-error-n.svg);
 	background-repeat: no-repeat;
 	background-position: 97% 50%;
 	border-bottom: none;
